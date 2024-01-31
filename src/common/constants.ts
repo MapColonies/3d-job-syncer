@@ -7,7 +7,8 @@ export const DEFAULT_SERVER_PORT = 80;
 export const IGNORED_OUTGOING_TRACE_ROUTES = [/^.*\/v1\/metrics.*$/];
 export const IGNORED_INCOMING_TRACE_ROUTES = [/^.*\/docs.*$/];
 
-export const JOB_TYPE = config.get<string>('jobManager.jobType');
+export const INGESTION_JOB_TYPE = config.get<string>('jobManager.jobType.ingestion');
+export const DELETE_JOB_TYPE = config.get<string>('jobManager.jobType.delete');
 
 /* eslint-disable @typescript-eslint/naming-convention */
 export const SERVICES: Record<string, symbol> = {

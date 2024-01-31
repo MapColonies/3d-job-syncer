@@ -22,7 +22,10 @@
   },
   "jobManager": {
     "url": "JOB_MANAGER_URL",
-    "jobType": "JOB_TYPE"
+    "jobType": {
+      "ingestion": "INGESTION_JOB_TYPE",
+      "delete": "DELETE_JOB_TYPE"
+    }
   },
   "catalog": {
     "url": "CATALOG_URL",

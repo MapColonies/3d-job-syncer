@@ -4,6 +4,7 @@ import { randUuid } from '@ngneat/falso';
 export const catalogManagerClientMock = {
   createCatalogMetadata: jest.fn(),
   deleteCatalogMetadata: jest.fn(),
+  deleteMetadata: jest.fn(),
 };
 
 export const createFakeMetadata: Pycsw3DCatalogRecord = {
